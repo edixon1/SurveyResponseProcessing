@@ -12,7 +12,7 @@ catInfo <- do.call("rbind", catInfo)
 maxWidth <- max(catInfo$width)
 maxHeight <- max(catInfo$height)
 
-
+#Modify dimensions of picture so the amount of border to add to each side will always be even
 for(i in 1:length(catImages)){
   #add border to top and bottom of each image so each image has equal dimensions
   if(maxWidth %% 2 == 0){
